@@ -21,32 +21,6 @@ After executing the game you will be presented with the Main Menu screen.
 
 - Click "Shop" in order to spend coins collected and get dressed
 
-Prerequisites
-=============
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-Installing
-==========
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 Built With
 ==========
@@ -75,7 +49,8 @@ and present in on time.
 License
 =======
 
-The project was created in the context of ITI0202 course at Tallinn University of Technology.
+The project was created in the context of ITI0202 course at Tallinn University of Technology. Main cahracter partly represents 
+the tutor of the course mentioned - Ago Luberg
 
 
 15.05.2018
