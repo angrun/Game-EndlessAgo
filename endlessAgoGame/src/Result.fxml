@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootpane" maxHeight="800.0" maxWidth="1920.0" minHeight="768.0" minWidth="600.0" prefHeight="768.0"
+           prefWidth="1024.0" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResultScene">
+    <children>
+        <Pane maxHeight="800.0" maxWidth="1920.0" minHeight="768.0" minWidth="600.0" prefHeight="768.0"
+              prefWidth="1024.0">
+            <children>
+                <ImageView fx:id="background2" fitHeight="788.0" fitWidth="2061.0" layoutX="2000.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background1" fitHeight="1521.0" fitWidth="2056.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="536.0" fitWidth="376.0" layoutX="332.0" layoutY="171.0" opacity="0.65"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/blueBackground.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="121.0" fitWidth="564.0" layoutX="251.0" layoutY="26.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/gameOver.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="180.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/resultDistance.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="70.0" fitWidth="175.0" layoutX="350.0" layoutY="240.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/coinsResult.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="413.0" layoutY="375.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/topTable.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="playAgainButton" fitHeight="130.0" fitWidth="148.0" layoutX="29.0" layoutY="621.0"
+                           onMouseClicked="#playAgain" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/playAgain.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="mainMenuButton" fitHeight="127.0" fitWidth="155.0" layoutX="860.0" layoutY="622.0"
+                           onMouseClicked="#returnToMainMenu" pickOnBounds="true" preserveRatio="true"
+                           styleClass="button">
+                    <image>
+                        <Image url="@images/titles/mainMenuFromResult.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="78.0" fitWidth="241.0" layoutX="350.0" layoutY="300.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/coinsTotalResult.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="coinsTotal" layoutX="600.0" layoutY="320.0" styleClass="baseText" text="0"/>
+                <Label fx:id="coinsCollected" layoutX="600.0" layoutY="260.0" styleClass="baseText" text="0"/>
+                <Label fx:id="distanceRun" layoutX="600.0" layoutY="200.0" styleClass="baseText" text="0"/>
+                <Label layoutX="350.0" layoutY="440.0" styleClass="baseText" text="1"/>
+                <Label layoutX="350.0" layoutY="490.0" styleClass="baseText" text="2"/>
+                <Label layoutX="350.0" layoutY="640.0" styleClass="baseText" text="5"/>
+                <Label layoutX="350.0" layoutY="540.0" styleClass="baseText" text="3"/>
+                <Label layoutX="350.0" layoutY="590.0" styleClass="baseText" text="4"/>
+                <Label fx:id="timeResult1" layoutX="400.0" layoutY="440.0" prefHeight="23.0" prefWidth="145.0"
+                       styleClass="text1" text="Label"/>
+                <Label fx:id="timeResult2" layoutX="400.0" layoutY="490.0" prefHeight="27.0" prefWidth="145.0"
+                       styleClass="text1" text="Label"/>
+                <Label fx:id="timeResult3" layoutX="400.0" layoutY="540.0" prefHeight="27.0" prefWidth="145.0"
+                       styleClass="text1" text="Label"/>
+                <Label fx:id="timeResult4" layoutX="400.0" layoutY="590.0" prefHeight="27.0" prefWidth="145.0"
+                       styleClass="text1" text="Label"/>
+                <Label fx:id="timeResult5" layoutX="400.0" layoutY="640.0" prefHeight="27.0" prefWidth="145.0"
+                       styleClass="text1" text="Label"/>
+                <Line endX="330.0" layoutX="355.0" layoutY="556.0" rotate="90.0" startX="100.0" strokeDashOffset="10.0"
+                      strokeMiterLimit="15.0" strokeWidth="4.0"/>
+                <Label fx:id="distanceResult1" layoutX="600.0" layoutY="440.0" styleClass="baseText" text="Label"/>
+                <Label fx:id="distanceResult2" layoutX="600.0" layoutY="490.0" styleClass="baseText" text="Label"/>
+                <Label fx:id="distanceResult3" layoutX="600.0" layoutY="540.0" styleClass="baseText" text="Label"/>
+                <Label fx:id="distanceResult4" layoutX="600.0" layoutY="590.0" styleClass="baseText" text="Label"/>
+                <Label fx:id="distanceResult5" layoutX="600.0" layoutY="640.0" styleClass="baseText" text="Label"/>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RulesScene">
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@cssfile/styles.css">
+            <children>
+                <ImageView fx:id="background1" fitHeight="1051.0" fitWidth="2075.0" layoutX="-6.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background2" fitHeight="802.0" fitWidth="2089.0" layoutX="1943.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="372.0" fitWidth="770.0" layoutX="149.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rulesbox/rulesText.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="158.0" fitWidth="493.0" layoutX="343.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/rules.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButton" fitHeight="116.0" fitWidth="123.0" layoutX="25.0" layoutY="628.0" onMouseClicked="#returnToMainMenu" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

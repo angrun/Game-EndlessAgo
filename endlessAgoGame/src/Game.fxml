@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="800.0" maxWidth="1920.0" minHeight="768.0" minWidth="600.0" prefHeight="768.0" prefWidth="1024.0" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameScene">
+    <children>
+        <Pane fx:id="pane">
+            <children>
+                <ImageView fx:id="background1" fitHeight="768.0" fitWidth="1999.0">
+                    <image>
+                        <Image url="@images/backgrounds/candyBackground.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background2" fitHeight="768.0" fitWidth="2057.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" x="2000.0">
+                    <image>
+                        <Image url="@images/backgrounds/candyBackground.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="coins" fitHeight="79.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/coin.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="coinsAmount" layoutX="129.0" layoutY="34.0" prefHeight="52.0" prefWidth="79.0" styleClass="baseText" text="0" textAlignment="CENTER" />
+                <ImageView fx:id="pauseButton" fitHeight="68.0" fitWidth="68.0" layoutX="942.0" layoutY="12.0" onMouseClicked="#pauseGame" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/pause.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="infoButton" fitHeight="68.0" fitWidth="68.0" layoutX="943.0" layoutY="93.0" onMouseClicked="#infoButtonPressed" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/Info.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="life3" fitHeight="55.0" fitWidth="65.0" layoutX="865.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/life.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="life2" fitHeight="55.0" fitWidth="65.0" layoutX="800.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/life.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="life1" fitHeight="55.0" fitWidth="65.0" layoutX="735.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/life.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="runningAgo1" fitHeight="305.0" fitWidth="208.0" layoutX="34.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/classic/1Nomove.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="timeOut" fitHeight="673.0" fitWidth="200.0" layoutX="405.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/getready/three.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="distance" layoutX="600.0" layoutY="30.0" styleClass="baseText" text="0" />
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/distanceRun.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="infoButtonPane" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="quit" fitHeight="176.0" fitWidth="372.0" layoutX="350.0" layoutY="300.0" onMouseClicked="#showResultStage" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/quit.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rules" fitHeight="176.0" fitWidth="372.0" layoutX="340.0" layoutY="150.0" onMouseClicked="#rulesPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/rules.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButton1" fitHeight="136.0" fitWidth="140.0" layoutX="454.0" layoutY="547.0" onMouseClicked="#firstReturnButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="rulesPane" layoutX="20.0" layoutY="20.0" prefHeight="10.0" prefWidth="10.0" translateX="100.0">
+            <children>
+                <ImageView fitHeight="176.0" fitWidth="372.0" layoutX="250.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/rules.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButton2" fitHeight="136.0" fitWidth="140.0" layoutX="353.0" layoutY="548.0" onMouseClicked="#secondReturnButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="319.0" fitWidth="565.0" layoutX="150.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rulesbox/rulesText.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="wantToContinuePane" layoutY="600.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="wantToContinueImage" fitHeight="122.0" fitWidth="786.0" layoutX="144.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/wantToContinue.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="life" fitHeight="195.0" fitWidth="300.0" layoutX="147.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/life.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="timer" layoutX="607.0" layoutY="280.0" prefHeight="87.0" prefWidth="183.0" styleClass="text_for_timer" text="5" />
+                <Button fx:id="buyLifeButton" layoutX="409.0" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#buyLifeToContinue" prefHeight="67.0" prefWidth="191.0" text="0">
+                    <styleClass>
+                        <String fx:value="buy_button" />
+                        <String fx:value="text1" />
+                    </styleClass>
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="40.0" fitWidth="66.0" layoutX="545.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icons/life.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane fx:id="pauseButtonPane" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ImageView fitHeight="172.0" fitWidth="442.0" layoutX="320.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/pauseImage.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButtonFromPause" fitHeight="135.0" fitWidth="150.0" layoutX="452.0" layoutY="550.0" onMouseClicked="#returnFromPause" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

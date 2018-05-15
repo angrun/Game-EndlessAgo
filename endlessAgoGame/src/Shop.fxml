@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="800.0" maxWidth="1920.0" minHeight="768.0" minWidth="600.0" prefHeight="768.0"
+           prefWidth="1024.0" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShopScene">
+    <children>
+        <Pane fx:id="pane" prefHeight="831.0" prefWidth="1080.0">
+            <children>
+                <ImageView fx:id="background2" fitHeight="804.0" fitWidth="2120.0" layoutX="1978.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background1" fitHeight="799.0" fitWidth="2770.0" layoutX="-7.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="ago" fitHeight="506.0" fitWidth="534.0" layoutX="43.0" layoutY="116.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/classic/1Nomove.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="hat" fitHeight="134.0" fitWidth="220.0" layoutX="437.0" layoutY="51.0"
+                           onMouseEntered="#setAgoHat" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/hat/hat.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="glasses" fitHeight="136.0" fitWidth="223.0" layoutX="753.0" layoutY="49.0"
+                           onMouseEntered="#setAgoGlasses" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/glasses/glasses.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="flowers" fitHeight="130.0" fitWidth="110.0" layoutX="797.0" layoutY="295.0"
+                           onMouseEntered="#setAgoFlowers" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/flowers/flower.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="bow" fitHeight="161.0" fitWidth="258.0" layoutX="484.0" layoutY="278.0"
+                           onMouseDragEntered="#setAgoBow" onMouseEntered="#setAgoBow" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/agoShop/bow/bow.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButton" fitHeight="102.0" fitWidth="147.0" layoutX="16.0" layoutY="650.0"
+                           onMouseClicked="#returnButton" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="coinsTotal" layoutX="277.0" layoutY="31.0" prefHeight="33.0" prefWidth="147.0"
+                       styleClass="baseText" text="0"/>
+                <ImageView fitHeight="84.0" fitWidth="213.0" layoutX="11.0" layoutY="10.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/coinsText.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="102.0" layoutX="447.0" layoutY="186.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/priceText.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="102.0" layoutX="768.0" layoutY="187.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/priceText.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="102.0" layoutX="436.0" layoutY="412.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/priceText.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="102.0" layoutX="762.0" layoutY="429.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/priceText.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="hatPrice" layoutX="579.0" layoutY="195.0" prefHeight="30.0" prefWidth="79.0"
+                       styleClass="baseText" text="75"/>
+                <Label fx:id="bowPrice" layoutX="566.0" layoutY="419.0" prefHeight="30.0" prefWidth="79.0"
+                       styleClass="baseText" text="25"/>
+                <Label fx:id="glassesPrice" layoutX="908.0" layoutY="197.0" prefHeight="30.0" prefWidth="79.0"
+                       styleClass="baseText" text="100"/>
+                <Label fx:id="flowersPrice" layoutX="897.0" layoutY="436.0" prefHeight="30.0" prefWidth="79.0"
+                       styleClass="baseText" text="50"/>
+                <ImageView fx:id="buyHat" fitHeight="82.0" fitWidth="233.0" layoutX="187.0" layoutY="660.0"
+                           onMouseClicked="#buyHat" onMouseEntered="#setAgoHat" pickOnBounds="true" preserveRatio="true"
+                           rotate="-10.0" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/buyHat.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="buyBow" fitHeight="74.0" fitWidth="222.0" layoutX="369.0" layoutY="610.0"
+                           onMouseClicked="#buyBow" onMouseEntered="#setAgoBow" pickOnBounds="true" preserveRatio="true"
+                           rotate="20.0" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/buyBow.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="buyFlower" fitHeight="57.0" fitWidth="342.0" layoutX="492.0" layoutY="695.0"
+                           onMouseClicked="#buyFlower" onMouseEntered="#setAgoFlowers" pickOnBounds="true"
+                           preserveRatio="true" rotate="-7.0" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/buyFlowers.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="buyGlasses" fitHeight="50.0" fitWidth="307.0" layoutX="591.0" layoutY="611.0"
+                           onMouseClicked="#buyGlasses" onMouseEntered="#setAgoGlasses" pickOnBounds="true"
+                           preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/buyGlasses.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="buyClassic" fitHeight="88.0" fitWidth="147.0" layoutX="846.0" layoutY="656.0"
+                           onMouseClicked="#buyClassic" onMouseEntered="#setAgoClassic" pickOnBounds="true"
+                           preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/stayClassic.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

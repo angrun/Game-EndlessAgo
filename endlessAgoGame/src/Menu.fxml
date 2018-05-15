@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="800.0" maxWidth="1920.0" minHeight="768.0" minWidth="320.0" prefHeight="300.0" prefWidth="1024.0" styleClass="mainStage" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuScene">
+    <children>
+        <Pane>
+            <children>
+                <ImageView fx:id="background1" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background2" pickOnBounds="true" preserveRatio="true" x="2000.0">
+                    <image>
+                        <Image url="images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="Heading" fitHeight="165.0" fitWidth="631.0" layoutX="261.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="images/titles/Heading.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="startButton" fitHeight="131.0" fitWidth="312.0" layoutX="97.0" layoutY="214.0" onMouseClicked="#startButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/startButton.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="infoButton" fitHeight="97.0" fitWidth="168.0" layoutX="169.0" layoutY="325.0" onMouseClicked="#infoButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/infoButton.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="soundOff" fitHeight="79.0" fitWidth="92.0" layoutX="31.0" layoutY="656.0" onMouseClicked="#musicOff" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/sound/soundOn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="ago" fitHeight="541.0" fitWidth="360.0" layoutX="551.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="shopButtonMainMenu" fitHeight="96.0" fitWidth="268.0" layoutX="153.0" layoutY="537.0" onMouseClicked="#shopButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/shop.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="rulesButton" fitHeight="105.0" fitWidth="239.0" layoutX="134.0" layoutY="422.0" onMouseClicked="#rulesButtonPressed" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/titles/rules.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

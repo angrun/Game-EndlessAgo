@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@cssfile/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InfoScene">
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="background1" fitHeight="804.0" fitWidth="2050.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="background2" fitHeight="774.0" fitWidth="2053.0" layoutX="1962.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/backgrounds/background.png" />
+                    </image>
+                </ImageView>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="509.0" layoutX="166.0" layoutY="145.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="675.0" />
+                <ImageView fitHeight="133.0" fitWidth="298.0" layoutX="378.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/titles/infoButton.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="returnButton" fitHeight="120.0" fitWidth="125.0" layoutX="23.0" layoutY="628.0" onMouseClicked="#returnToMainMenu" pickOnBounds="true" preserveRatio="true" styleClass="button">
+                    <image>
+                        <Image url="@images/icons/returnButtonn.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="196.0" fitWidth="164.0" layoutX="176.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/anjaAndMarina/anjaMarinaBefore.jpg" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="168.0" layoutY="353.0" prefHeight="32.0" prefWidth="164.0" styleClass="baseText" text="BEFORE" />
+                <Label alignment="CENTER" layoutX="168.0" layoutY="586.0" prefHeight="32.0" prefWidth="164.0" styleClass="baseText" text="AFTER" />
+                <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="382.0" layoutY="159.0" prefHeight="474.0" prefWidth="435.0" styleClass="baseText" />
+                <ImageView fitHeight="459.0" fitWidth="465.0" layoutX="354.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/rulesbox/gameInfo.png" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="147.0" layoutX="179.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/anjaAndMarina/anjaMarinaAfter.jpg" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>
