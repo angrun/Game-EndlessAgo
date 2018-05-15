@@ -153,7 +153,7 @@ public class ShopScene {
                     "/images/agoShop/glasses/4RunGlasses.png\n" +
                     "/images/agoShop/glasses/5RunGlasses.png\n" +
                     "/images/agoShop/glasses/6RunGlasses.png\n" +
-                    "/images/agoShop/glasses/image/glasses/1NomoveGlasses.png\n" +
+                    "/images/agoShop/glasses/images/glasses/1NomoveGlasses.png\n" +
                     "/images/agoShop/glasses/1JumpGlasses.png\n" +
                     "/images/agoShop/glasses/2JumpGlasses.png");
             writer.close();

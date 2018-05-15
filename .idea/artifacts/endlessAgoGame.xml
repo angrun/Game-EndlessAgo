@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="endlessAgoGame">
+    <output-path>$PROJECT_DIR$/out/artifacts/endlessAgoGame</output-path>
+    <root id="root">
+      <element id="archive" name="endlessAgoGame.jar">
+        <element id="module-output" name="endlessAgoGame" />
+      </element>
+    </root>
+  </artifact>
+</component>
